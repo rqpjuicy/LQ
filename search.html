@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <title>Title</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <title>Title</title>
+    <style>
+        a:link,input{
+            outline: none;
+        }
+        body{
+            background: #003150;
+        }
+        .head{
+            position: relative;
+            background: #003150;
+            z-index: 3;
+            height: 165px;
+        }
+        .logo{
+            display: block;
+            width: 160px;
+            height: 42px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -21px 0 0 -80px;
+            background: url('img/logo-white.svg') no-repeat center center;
+            background-size: auto auto;
+            background-size: 100% auto;
+
+        }
+        .separator{
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.1);
+
+        }
+        .content1{
+            text-align: center;
+            background: #003150;
+            position: relative;
+            z-index: 2;
+            padding: 73px 0;
+        }
+        .content1 .font{
+            font-size: 25px;
+        }
+        @media (min-width: 768px), print{
+            .content1 {
+                padding: 60px 0 88px 0;
+            }
+            .field{
+                padding-right: 60px;
+            }
+            #search{
+                line-height: 60px;
+                font-size: 3rem;
+            }
+            .btn-search{
+                width: 60px;
+                padding: 10px;
+            }
+            .search-bottom{
+                height: calc(100vh - 366px);
+                background: #002744;
+            }
+            .search_autocomplete{
+                padding: 0 30px;    
+            }
+            .search_no_results{
+                margin-top: 80px;
+                padding: 45px 0;
+                font-size: 16px;
+            }
+            .search-popular{
+                max-width: 952px;
+                margin: 0 auto;
+                text-align: left;
+            }
+            .search-popular p{
+                padding: 60px 30px 0 30px;
+                font-size: 11px;
+            }
+            
+        }
+        .field{
+            width: 80%;
+            max-width: 540px;
+            margin: 0 auto;
+            position: relative;
+            padding-right: 40px;
+            border-bottom: 1px solid #3f6589;
+        }
+         #search{
+            height: auto;
+            background: transparent;
+            padding: 0 0 0 2px;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            -ms-border-radius: 0;
+            border-radius: 0;
+            border: none;
+            line-height: 40px;
+            font-size:22px;
+            letter-spacing: 1px;
+            color: #ffffff;
+            display: block !important;
+            position: static !important;
+            opacity: 1 !important;
+         } 
+         .btn-search{
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 40px;
+            padding: 5px;
+            background: none;
+            border: none;
+            color: #ffffff;
+            -webkit-opacity: 0.8;
+            -moz-opacity: 0.8;
+            -ms-opacity: 0.8;
+            opacity: 0.8;
+         }  
+         .search-bottom{
+            overflow-x: hidden;
+            overflow-y: auto;
+            padding-bottom: 50px;
+         }
+         .search_autocomplete{
+            background: #fff;
+            color: #444;
+         }
+         .search_no_results{
+            display: none;
+            text-align: center;
+            background: #fff;
+            letter-spacing: 0.1em;
+            color: #555;
+            font-size: 14px;
+            font-weight: 600;
+         }
+         .search-popular p{
+            padding: 20px 20px 0 20px;
+            color: #a3c1d8;
+            font-size: 12px;
+            margin: 0 0 4px 0;
+            letter-spacing: 0.1em;
+         }
+         .mag .upper {
+            text-transform: uppercase;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .search-terms{
+           opacity: 1;
+           transform: matrix(1, 0, 0, 1, 0, 0);
+        }
+        ul>li{
+            padding: 20px 20px 0 20px;
+
+        }
+        .search-terms li>a{
+            display: block;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            line-height: 30px;
+            font-size: 15px !important;
+            text-transform: uppercase;
+            color: #ffffff;
+            text-decoration: none;
+            border-bottom: 1px solid #677988;
+       }
+        .search-terms li:last-child>a{
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="head" style="transform: matrix(1,0,0,1,0,0)">
+        <span class="logo"></span>
+        <span class="separator" style="transform: matrix(1, 0, 0, 1, 0, 0);"></span>
+    </div>
+    <div class="content1">
+            <div class="field">
+                <input id="search"  type="text" name="q" value="" placeholder="搜索" class="input-text" maxlength="128" role="search" aria-haspopup="false" autocomplete="off">
+                <button data-trigger="search"  title="搜索" class="inline btn-search">
+                     <span class="glyphicon glyphicon-search font"></span>
+                </button>
+            </div>
+    </div>
+    <div class="content2">
+        <div class="search-bottom">
+            <div id="search_autocomplete" class="search-autocomplete" style="display: none;"></div>
+            <div id="search_no_results" class="search-no-results" style="display: none;">搜索无结果</div>
+            <div id="search_popular" class="search-popular">   
+               <p class="upper">您可能感兴趣</p>
+               <ul class="search-terms">
+                  <li class="item">
+                     <a href="search_result.html?q=l2">l2 </a>
+                  </li>
+                  <li class="item" style="">
+                     <a href="search_result.html?q=l2.142.0.70.4"> l2.142.0.70.4 </a>
+                  </li>
+                  <li class="item">
+                      <a href="search_result.html?q=l4">l4</a>
+                  </li>
+                  <li class="item" >
+                      <a href="" class="retailers"><span class="glyphicon glyphicon-map-marker">&nbsp</span>零售店</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+        //按表的编号查找
+        $(()=>{
+          $(document.body).on("click","[data-trigger=search]",function(){
+              var $txtSearch=$(this).parent().children("input").val().trim();
+              if($txtSearch!==""){
+                window.location.href="search_result.html?q="+$txtSearch;
+              }else location="search.html";
+          });
+          $(document).on("keyup","#search",e=>{
+            if(e.keyCode==13){
+                $(e.target).next().click();
+            }
+          });
+        
+    })
+
+    </script>
+</body>
+</html>

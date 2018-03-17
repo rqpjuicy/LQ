@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=2.0,minimum-scale=2.0">
+    <title>搜索结果</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/watch_list.css">
+    <style>
+	    body{
+			font-size: 62.5%;
+	    }
+	    .hide{
+	    	display: none;
+	    }
+		*{box-sizing:border-box;}
+		.top{
+			height: 170px;
+			background-color:#EFF1F3;
+		}
+		.top>.container .breadcrumb{
+			background-color:transparent;
+			margin:120px 0 10px;
+		    font-size: 1.4rem;
+		}
+		.result-title{
+			width: 100%;
+			background-color: #fff;
+			height: 170px;
+		}
+		.result-title h3{
+			margin:30px 15px;
+		}
+		.result-title p{
+			font-size: 4rem;
+			color: #003150;
+			margin-left: 53px;
+		}
+		.search{
+			background-color: #003150;
+		}
+		.search .first-title {
+			border-bottom: 1px solid #3F6589;
+		}
+		.search .first-title h3{
+			height: 138px;
+			line-height: 138px;
+			margin-left: 53px;
+			margin-top: 0;
+			font-size: 2rem;
+			color: #fff;
+		}
+		.search .second-title {
+			margin:70px 0 140px 53px;
+			font-size: 4rem;
+			color: #fff;
+		}
+    </style>
+</head>
+<body>
+    <div class="top">
+    	<div class="container">
+    		 <ul class="breadcrumb">
+	               <li>主页</li>
+					<li>搜索结果：<span class="keyword"></span></li>
+	         </ul>
+    	</div>
+    </div>
+    <div class="result-title">
+    	<div class="container">
+            	<h3>搜索</h3>
+            	<p class="keyword"></p>
+        </div>
+    </div>
+    <div class="search">
+    	<div class="container">
+    		<div class="first-title">
+    			<h3>腕表（40）</h3>
+    		</div>
+    		<div class="second-title">
+    			腕表（40）
+    		</div>
+    		<div class="container">
+    	        <div class="row search-list">
+	               
+                </div>
+    		</div>
+    	</div>
+
+    </div>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/watch_detailList.js"></script>
+</body>
+</html>

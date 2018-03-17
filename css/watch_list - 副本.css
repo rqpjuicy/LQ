@@ -1,0 +1,72 @@
+.banner {
+    background: url("../images/creator/banner.jpg") left -216px;
+    height: 472px;
+    width: 100%;
+    position: relative;
+}
+.banner>.info {
+    margin-left: 8%;
+    color: #fff;
+    position: absolute;
+    top: 28%;
+}
+.banner>.info>h1 {
+    font-size: 3em;
+}
+.section {
+    width: 86%;
+    margin: auto;
+}
+.section>.container {
+    float: left;
+}
+.breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+.breadcrumb > li {
+    display: inline-block;
+}
+.breadcrumb > li + li:before {
+    content: "/\00a0";
+    padding: 0 5px;
+    color: #ccc;
+}
+.breadcrumb > .active {
+    color: #777777;
+}
+.condition {
+    float: right;
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+.search-list {
+    display: flex;
+    justify-content:space-between;
+
+    width: 86%;
+    margin:0 auto;
+}
+.search-list>.item,.search-list>.item img{
+    width:420px;
+    height: 560px;
+}
+.search-list>.item{
+    position: relative;
+    border: 1px solid #C7CCD0;
+}
+.search-list>.item>.item-detail{
+    position: absolute;
+    top: 85%;
+    left: 40%;
+    color:#84888B;
+}
+.search-list>.item{
+
+}

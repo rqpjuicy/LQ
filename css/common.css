@@ -1,0 +1,42 @@
+body,html,div,dl,dt,dd,ul,li,ol,h1,h2,h3,h4,h5,h6,p,input,button {
+	margin: 0;
+	padding: 0;
+}
+ul,ol {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color:#666;
+}
+.clear:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: "";
+	clear: both;
+	height: 0;
+}
+.clearfix {
+	zoom:1;
+}
+
+.lf {
+	float: left;
+}
+.rt {
+	float: right;
+}
+
+div.main{
+    width:960px;
+    margin:0 auto;
+}
+#header{
+  width:960px;
+  height:170px;
+}
+#footer{
+  width:960px;
+  height:520px;
+}

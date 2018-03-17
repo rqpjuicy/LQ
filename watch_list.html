@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <title>Title</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/watch_list.css">
+    <link rel="stylesheet" href="css/jquery.range.css">
+</head>
+<body>
+   <div class="main">
+      <div class="banner">
+         <img src="img/banner_11.jpg" class="img-responsive">
+      </div>
+      <div class="row">
+               <div class="col-sm-12 hidden-md hidden-lg top-breadcrumb">
+                   <ul class="breadcrumb">
+                       <li><a href="">主页</a></li>
+                       <li><a href="">腕表</a></li>
+                       <li><a href="">制表系统</a></li>
+                       <li><a href="" class="fname">开创者系列</a></li>
+                   </ul>
+               </div>
+      </div>
+      <div class="container desc">
+          <div class="row">
+              <div class="info hidden-xs col-sm-offset-2">
+                 <h1>开创者系列</h1>
+                 <p>真正的优雅，永恒的传承</p>
+                 <a href="#">探索更多&nbsp;&nbsp;<span class="glyphicon glyphicon-menu-right"></span></a>
+              </div>
+          </div>
+      </div>
+
+    <div class="section">
+       <div class="container">
+           <div class="row small-view">
+               <div class="col-xs-12 hidden-md hidden-lg">
+                   <a href="javascript:;" class="view-info-sm"><span>开创者系列</sp</a>
+               </div>
+           </div>
+           <div class="row">
+               <div class="col-md-4 hidden-xs hidden-sm">
+                   <ul class="breadcrumb">
+                       <li><a href="">主页</a></li>
+                       <li><a href="">腕表</a></li>
+                       <li><a href="">制表系统</a></li>
+                       <li><a href="">开创者系列</a></li>
+                   </ul>
+               </div>
+               <div class="col-md-1 hidden-sm hidden-xs">
+                   <a class="view-info" href="javascript:;">i</a>
+               </div>
+               <div class="condition col-md-4 col-md-offset-3">
+                   <span>排序</span>
+                   <div class="dropdown">
+                      <a href="javascript:;" id="dropdownMenu"><span>默认</span><i class="glyphicon glyphicon-chevron-down"></i></a>
+                      <ul>
+                          <li><a href="javascript:;" data-order="0">默认</a></li>
+                          <li><a href="javascript:;" data-order="1">价格升序</a></li>
+                          <li><a href="javascript:;" data-order="2">价格降序</a></li>
+                          <li><a href="javascript:;" data-order="3">热销商品</a></li>
+                          <li><a href="javascript:;" data-order="4">最新表款</a></li>
+                      </ul>
+                   </div>
+                   <span>筛选</span><a class="glyphicon glyphicon-list condition-icon" href="javascript:;"><p>筛选</p></a>
+               </div>
+           </div>
+           <div class="row detail-desc">
+               <div class="col-md-12">
+                   <h2>开创者系列</h2>
+                   <p>浪琴表在庆祝185周年之际，推出全新系列腕表。回溯185年间浪琴表精密计时器，荣获瑞士天文台认证的悠久传统，呈献浪琴首个全系列被授以天文台认证的表款系列，也是品牌首个在机芯中加入单晶硅游丝的表款系列，延续185周年以来的瑞士制表传统，也传达坚持创新、直面挑战的品牌精神。</p>
+                   <a href="">其他系列</a>
+               </div>
+           </div>
+           <div class="row detail-condition">
+               <div class="condition-left col-md-4">
+                   <div class="price-item col-md-12">
+                       <h4>价格</h4>
+                       <span class="price"><span class="min">￥9000.00</span>-<span class="max">￥50000.00</span></span>
+                       <input type="hidden" class="range-slider" value="13" />
+                   </div>
+                   <div class="col-md-12">
+                       <h4>库存</h4>
+                   </div>
+               </div>
+               <div class="condition-right col-md-8">
+                    <h4>选择筛选项目<a href="javascript:;" class="clear">清除</a></h4>
+                    <div class="row">
+                        <form>
+                            <div class="col-md-4">
+                                <ul>
+                                    <li>
+                                        <p>性别</p><span class="view-radio glyphicon glyphicon-menu-right"></span>
+                                        <div class="radio-item">
+                                            <p><input type="radio" name="sex" value="0">男仕腕表</p>
+                                            <p><input type="radio" name="sex" value="1">女仕腕表</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>机芯</p><span class="view-radio glyphicon glyphicon-menu-right"></span>
+                                        <div class="radio-item">
+                                            <p><input type="radio" name="engine" value="auto">自动</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>宽度</p><span class="view-radio glyphicon glyphicon-menu-right"></span>
+                                        <div class="radio-item">
+                                            <p><input type="radio" name="size" value="30">少于30毫米</p>
+                                            <p><input type="radio" name="size" value="40">30毫米至40毫米</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul>
+                                    <li>
+                                        <p>表壳</p><span class="view-radio glyphicon glyphicon-menu-right"></span>
+                                        <div class="radio-item">
+                                            <p><input type="radio" name="shell" value="circle">圆形</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>钻石</p><span class="view-radio glyphicon glyphicon-menu-right"></span>
+                                        <div class="radio-item">
+                                            <p><input type="radio" name="diamond" value="1">是</p>
+                                            <p><input type="radio" name="diamond" value="0">否</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>颜色</p><span class="view-radio glyphicon glyphicon-menu-right"></span>
+                                        <div class="radio-item">
+                                            <p><input type="radio" name="color" value="black">黑色</p>
+                                            <p><input type="radio" name="color" value="silvery">银色</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul>
+                                    <li>
+                                        <p>材质</p><span class="view-radio glyphicon glyphicon-menu-right"></span>
+                                        <div class="radio-item">
+                                            <p><input type="radio" name="mater" value="steel">精钢</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>表带</p><span class="view-radio glyphicon glyphicon-menu-right"></span>
+                                        <div class="radio-item">
+                                            <p><input type="radio" name="band" value="metal">金属</p>
+                                            <p><input type="radio" name="band" value="derma">真皮</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>防水深度</p><span class="view-radio glyphicon glyphicon-menu-right"></span>
+                                        <div class="radio-item">
+                                            <p><input type="radio" name="deep" value="5">5巴</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+               </div>
+           </div>
+           <div class="row search-list">
+
+           </div>
+       </div>
+    </div>
+   </div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.range.js"></script>
+<script src="js/watch_detailList.js"></script>
+<script src="js/watch_list.js"></script>
+
+</body>
+</html>
